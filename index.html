@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>cd</title>
+        <link rel="stylesheet" type="text/css" href="cd.css" />
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" integrity="sha256-1hjUhpc44NwiNg8OwMu2QzJXhD8kcj+sJA3aCQZoUjg=" crossorigin="anonymous"></script>
+        <script defer src="cd.js"></script>
+    </head>
+    <body>
+        <div class="now">
+            Now: <span class="time" id="currentTime">00:00:00</span>
+        </div>
+        <div class="progressBar">
+            <div class="longTime">0 minutes</div>
+            <div class="bar"></div>
+        </div>
+        <div class="info">
+            Started waiting at <span class="time" id="startTime">00:00:00</span> until <span class="time" id="endTime">00:00:00</span>.
+        </div>
+
+        <audio preload="preload" id="alarm">
+            <source src="alarm.ogg" type="audio/ogg" />
+        </audio>
+    </body>
+</html>
